@@ -1,0 +1,16 @@
+{
+  "name": "html-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "onchange 'scss/**/*.scss' -- npm run compile:sass",
+    "compile:sass": "sass scss/custom.scss css/podoma.min.css --style=compressed && postcss css/podoma.min.css --replace --use autoprefixer"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "onchange": "^7.1.0",
+    "sass": "^1.70.0"
+  }
+}
