@@ -15,7 +15,7 @@ BOOTSTRAP CUSTOMIZATIONS
     height: 100%;
     top: 0;
     left: 0;
-    background: url('/media/images/new/font_effect_1.png');
+    background: url('./media/images/new/font_effect_1.png');
 }
 .txt-green {
     color: #255946;
@@ -129,7 +129,7 @@ HERO SECTION
         height: 100%;
         top: 0;
         z-index: -1;
-        background: url("/media/images/new/home_top_banner.jpg") no-repeat center;
+        background: url("./media/images/new/home_top_banner.jpg") no-repeat center;
         background-size: cover;
 
         &::before {
@@ -138,7 +138,7 @@ HERO SECTION
             top: 0;
             bottom: 0;
             width: 100%;
-            background: url('/media/images/new/header_hadow.png') repeat-x center;
+            background: url('./media/images/new/header_hadow.png') repeat-x center;
             height: 10px;
         }
 
@@ -151,7 +151,7 @@ HERO SECTION
         height: 250px;
         width: 90vw;
         max-width: 620px;
-        background: url('/media/images/new/hero-content-bg.png') center center no-repeat;
+        background: url('./media/images/new/hero-content-bg.png') center center no-repeat;
         background-size: cover;
         h2 {
             @include pacifico-regular;
@@ -167,7 +167,7 @@ HERO SECTION
                 width: 100%;
                 height: 2.5em;
                 top: -1.5em;
-                background: url('/media/images/new/hero-content-bg-after.png') no-repeat center right;
+                background: url('./media/images/new/hero-content-bg-after.png') no-repeat center right;
             }
         }
     }
@@ -297,7 +297,7 @@ RECIPE CARDS
     padding-bottom: 30px;
 
     .content {
-        background: url('/media/images/new/recipe_content_bg.png') no-repeat center;
+        background: url('./media/images/new/recipe_content_bg.png') no-repeat center;
         height: 469px;
         gap: 50px;
 
@@ -330,7 +330,7 @@ RECIPE CARDS
         left: 0;
         width: 100%;
         height: 10px;
-        background: url('/media/images/new/recipe_card_after.png') repeat-x center;
+        background: url('./media/images/new/recipe_card_after.png') repeat-x center;
         z-index: -1;
     }
 }
@@ -365,7 +365,7 @@ footer {
         left: 0px;
         width: 100%;
         height: 15px;
-        background: url('/media/images/new/footer_before_el.png') no-repeat center;
+        background: url('./media/images/new/footer_before_el.png') no-repeat center;
         background-size: cover;
     }
 
@@ -423,7 +423,7 @@ footer {
         left: 0px;
         width: 100%;
         height: 15px;
-        background: url('/media/images/new/footer_before_el2.png') center;
+        background: url('./media/images/new/footer_before_el2.png') center;
         background-size: cover;
     }
 }
