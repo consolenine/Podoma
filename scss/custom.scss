@@ -207,6 +207,11 @@ HERO SECTION
 @media (min-width: $breakpoint-xl) {
     #hero {
         height: 120vh;
+
+        .hero-content {
+            height: 70vh;
+            max-width: 900px;
+        }
     }
 }
 
@@ -238,6 +243,14 @@ FEATURED PRODUCT HOME
 
     .featured-product-content > div {
         margin-top: 30px;
+        gap: 20px;
+    }
+
+    .featured-product-swiper {
+        width: 100%;
+        // .swiper-wrapper {
+        //     overflow-x: hidden;
+        // }
     }
 
 }
@@ -247,6 +260,10 @@ FEATURED PRODUCT HOME
 
         h4 {
             font-size: 70px;
+        }
+
+        .featured-product-content > div {
+            gap: 10px;
         }
         
     }
@@ -298,8 +315,9 @@ RECIPE CARDS
 
     .content {
         background: url('../media/images/new/recipe_content_bg.png') no-repeat center;
-        height: 469px;
-        gap: 50px;
+        height: 310px;
+        gap: 10px;
+        background-size: contain;
 
         h2 {
             @include pacifico-regular;
@@ -317,8 +335,9 @@ RECIPE CARDS
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
         height: 200px;
         background-color: #F8EEDA;
         z-index: -1;
@@ -327,11 +346,22 @@ RECIPE CARDS
         content: '';
         position: absolute;
         bottom: -10px;
-        left: 0;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
         height: 10px;
         background: url('../media/images/new/recipe_card_after.png') repeat-x center;
         z-index: -1;
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .recipe-card {
+        .content {
+            height: 469px;
+            gap: 50px;
+    
+        }
     }
 }
 
@@ -341,6 +371,17 @@ TIPS SECTION
 .swiper {
     width: 100%;
     padding: 40px 20px;
+
+    .swiper-slide {
+        transform: 500ms ease;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        .swiper-slide-active {
+            transform: scale(1.1);
+        }
+    }
+    
 }
 #tips {
     .category-cards {
@@ -351,9 +392,10 @@ TIPS SECTION
 /*---------------------------------
 FOOTER
 ---------------------------------*/
+
 footer {
     margin-top: 100px;
-    padding: 40px 100px;
+    padding: 40px 12px;
     background-color: #255946;
     color: #F8EEDA;
     position: relative;
@@ -408,6 +450,40 @@ footer {
         }
     }
 
+}
+
+@media (min-width: $breakpoint-lg) {
+    footer {
+        margin-top: 100px;
+        padding: 40px 100px;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 0px;
+            width: 100%;
+            height: 15px;
+        }
+    
+        .input-group {
+            padding: 6px 6px 6px 24px;
+            border-radius: 35px;
+            input {
+                border: none;
+                &:focus {
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+            button {
+                padding: 12px 25px;
+                border-radius: 25px !important;
+            }
+        }
+    
+    }
 }
 
 .footbar {
