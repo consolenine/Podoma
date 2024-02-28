@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "onchange 'scss/**/*.scss' -- npm run compile:sass",
-    "compile:sass": "sass scss/custom.scss css/podoma.min.css --style=compressed && postcss css/podoma.min.css --replace --use autoprefixer"
+    "compile:sass": "sass scss/custom.scss css/podoma.css && postcss css/podoma.css --replace --use autoprefixer",
+    "prod:sass": "sass scss/custom.scss css/podoma.min.css --style=compressed && postcss css/podoma.min.css --replace --use autoprefixer"
   },
   "author": "",
   "license": "ISC",
